@@ -1,0 +1,111 @@
+<div class="cabecalho">
+  <h2>Funcionários</h2>
+  <button class="btn" (click)="novo()">+ Novo funcionário</button>
+</div>
+
+@if (msg()) { <div class="alerta ok">{{ msg() }}</div> }
+@if (erro()) { <div class="alerta erro">{{ erro() }}</div> }
+
+@if (mostrandoForm()) {
+  <form class="form" [formGroup]="form" (ngSubmit)="salvar()" novalidate>
+    <h3>{{ editando() ? 'Editar' : 'Cadastrar' }} funcionário</h3>
+
+    <div class="grid">
+      <div class="campo larga">
+        <label for="nome">Nome completo</label>
+        <input id="nome" formControlName="nome" [class.invalido]="invalido('nome')">
+        @if (invalido('nome')) { <small>Informe o nome (mínimo 3 letras).</small> }
+      </div>
+
+      <div class="campo">
+        <label for="cpf">CPF</label>
+        <input id="cpf" formControlName="cpf" maxlength="14" placeholder="000.000.000-00" [class.invalido]="invalido('cpf')">
+        @if (invalido('cpf')) { <small>CPF inválido.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="nasc">Data de nascimento</label>
+        <input id="nasc" type="date" [max]="hoje" formControlName="dataNascimento" [class.invalido]="invalido('dataNascimento')">
+        @if (invalido('dataNascimento')) { <small>Informe uma data válida.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="sexo">Sexo</label>
+        <select id="sexo" formControlName="sexo" [class.invalido]="invalido('sexo')">
+          <option value="">Selecione</option>
+          <option value="F">Feminino</option>
+          <option value="M">Masculino</option>
+        </select>
+        @if (invalido('sexo')) { <small>Selecione uma opção.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" formControlName="email" [class.invalido]="invalido('email')">
+        @if (invalido('email')) { <small>Informe um e-mail válido.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="tel">Telefone (DDD + número)</label>
+        <input id="tel" formControlName="telefone" maxlength="11" placeholder="79999990000" [class.invalido]="invalido('telefone')">
+        @if (invalido('telefone')) { <small>Use 10 ou 11 números, sem espaços.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="cargo">Cargo</label>
+        <input id="cargo" formControlName="cargo" maxlength="20" [class.invalido]="invalido('cargo')">
+        @if (invalido('cargo')) { <small>Informe o cargo (até 20 caracteres).</small> }
+      </div>
+
+      <div class="campo">
+        <label for="adm">Data de admissão</label>
+        <input id="adm" type="date" [max]="hoje" formControlName="dataAdmissao" [class.invalido]="invalido('dataAdmissao')">
+        @if (invalido('dataAdmissao')) { <small>Informe uma data válida (não futura).</small> }
+      </div>
+    </div>
+
+    <div class="acoes">
+      <button class="btn" type="submit">Salvar</button>
+      <button class="btn btn-outline" type="button" (click)="cancelar()">Cancelar</button>
+    </div>
+  </form>
+}
+
+<div class="busca">
+  <input type="number" min="1" placeholder="Buscar por ID" [formControl]="buscaId" (keyup.enter)="buscarPorId()">
+  <button class="btn btn-outline" (click)="buscarPorId()">Buscar</button>
+  @if (resultado()) {
+    <button class="btn btn-outline" (click)="limparBusca()">Ver todos</button>
+  }
+</div>
+
+@if (carregando()) {
+  <p class="msg">Carregando...</p>
+} @else {
+  <div class="tabela-wrap">
+    <table class="tabela">
+      <thead>
+        <tr><th>ID</th><th>Nome</th><th>Cargo</th><th>CPF</th><th>Contato</th><th>Admissão</th><th>Situação</th><th>Ações</th></tr>
+      </thead>
+      <tbody>
+        @for (f of exibidos(); track f.idpessoa) {
+          <tr [class.inativo]="!f.ativo">
+            <td>{{ f.idpessoa }}</td>
+            <td><strong>{{ f.nome }}</strong></td>
+            <td>{{ f.cargo }}</td>
+            <td>{{ mascaraCpf(f.cpf) }}</td>
+            <td>{{ f.email }}<small>{{ f.telefone }}</small></td>
+            <td>{{ f.dataAdmissao | date:'dd/MM/yyyy' }}</td>
+            <td><span class="status" [class.off]="!f.ativo">{{ f.ativo ? 'Ativo' : 'Inativo' }}</span></td>
+            <td class="acoes-linha">
+              <button class="link" (click)="editar(f)">Editar</button>
+              <button class="link" (click)="alternarSituacao(f)">{{ f.ativo ? 'Desativar' : 'Reativar' }}</button>
+            </td>
+          </tr>
+        } @empty {
+          <tr><td colspan="8" class="vazio">Nenhum funcionário encontrado.</td></tr>
+        }
+      </tbody>
+    </table>
+  </div>
+}

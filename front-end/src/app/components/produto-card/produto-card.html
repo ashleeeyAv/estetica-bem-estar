@@ -1,0 +1,28 @@
+<article class="card">
+  <div class="imagem" [class.servico]="item().tipoItem === 'S'">
+    <span class="emoji">{{ item().tipoItem === 'S' ? '💆' : '🧴' }}</span>
+    <span class="tag">{{ item().categoria }}</span>
+  </div>
+
+  <div class="corpo">
+    <h3>{{ item().item }}</h3>
+    <p class="desc">{{ item().descricaoItem }}</p>
+
+    <p class="disp" [class.esgotado]="esgotado">
+      @if (item().tipoItem === 'S') {
+        Disponível para agendamento
+      } @else if (esgotado) {
+        Esgotado
+      } @else {
+        {{ item().quantidadeEstoque }} em estoque
+      }
+    </p>
+
+    <div class="rodape">
+      <strong class="preco">{{ item().preco | currency:'BRL' }}</strong>
+      <button class="btn" [disabled]="esgotado" (click)="adicionar.emit(item())">
+        {{ esgotado ? 'Indisponível' : 'Adicionar' }}
+      </button>
+    </div>
+  </div>
+</article>

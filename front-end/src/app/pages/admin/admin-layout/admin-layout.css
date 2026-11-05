@@ -1,0 +1,31 @@
+.painel { display: grid; grid-template-columns: 240px 1fr; gap: 28px; padding-top: 32px; align-items: start; }
+
+.menu {
+  background: #fff;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 20px 14px;
+  position: sticky;
+  top: 90px;
+}
+.menu h3 { padding: 0 10px 12px; font-size: 1.4rem; border-bottom: 1px solid var(--rose); margin-bottom: 10px; }
+.menu nav { display: flex; flex-direction: column; gap: 4px; }
+.menu a {
+  display: flex; gap: 10px; align-items: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: var(--texto);
+  text-decoration: none;
+  font-size: .92rem;
+  transition: background .2s;
+}
+.menu a:hover { background: var(--creme); }
+.menu a.ativo { background: var(--vinho); color: #fff; }
+
+.conteudo-admin { min-width: 0; }
+
+@media (max-width: 800px) {
+  .painel { grid-template-columns: 1fr; }
+  .menu { position: static; }
+  .menu nav { flex-direction: row; flex-wrap: wrap; }
+}

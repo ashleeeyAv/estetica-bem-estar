@@ -1,0 +1,53 @@
+<div class="cabecalho">
+  <h2>Categorias</h2>
+  <button class="btn" (click)="novo()">+ Nova categoria</button>
+</div>
+
+@if (msg()) { <div class="alerta ok">{{ msg() }}</div> }
+@if (erro()) { <div class="alerta erro">{{ erro() }}</div> }
+
+@if (mostrandoForm()) {
+  <form class="form" (ngSubmit)="salvar()">
+    <label for="nome">{{ editando() ? 'Editar categoria' : 'Nova categoria' }}</label>
+    <div class="linha">
+      <input id="nome" [formControl]="nome" maxlength="35" placeholder="Nome da categoria"
+             [class.invalido]="nome.invalid && nome.touched">
+      <button class="btn" type="submit">Salvar</button>
+      <button class="btn btn-outline" type="button" (click)="cancelar()">Cancelar</button>
+    </div>
+  </form>
+}
+
+<div class="busca">
+  <input type="number" min="1" placeholder="Buscar por ID" [formControl]="buscaId" (keyup.enter)="buscarPorId()">
+  <button class="btn btn-outline" (click)="buscarPorId()">Buscar</button>
+  @if (resultado()) {
+    <button class="btn btn-outline" (click)="limparBusca()">Ver todas</button>
+  }
+</div>
+
+@if (carregando()) {
+  <p class="msg">Carregando...</p>
+} @else {
+  <div class="tabela-wrap">
+    <table class="tabela">
+      <thead>
+        <tr><th>ID</th><th>Categoria</th><th>Ações</th></tr>
+      </thead>
+      <tbody>
+        @for (c of exibidas(); track c.idcategoria) {
+          <tr>
+            <td>{{ c.idcategoria }}</td>
+            <td><strong>{{ c.categoria }}</strong></td>
+            <td class="acoes-linha">
+              <button class="link" (click)="editar(c)">Editar</button>
+              <button class="link perigo" (click)="excluir(c)">Excluir</button>
+            </td>
+          </tr>
+        } @empty {
+          <tr><td colspan="3" class="vazio">Nenhuma categoria cadastrada.</td></tr>
+        }
+      </tbody>
+    </table>
+  </div>
+}

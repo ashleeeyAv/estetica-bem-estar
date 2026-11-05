@@ -1,0 +1,44 @@
+<section class="topo">
+  <div class="container">
+    <h1>Nosso Catálogo</h1>
+    <div class="busca">
+      <input type="text" placeholder="Buscar produto ou serviço..."
+             [value]="busca()" (input)="busca.set($any($event.target).value)">
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <nav class="filtros">
+    @for (c of categorias(); track c) {
+      <a href="javascript:void(0)" [class.ativo]="categoria() === c" (click)="categoria.set(c)">{{ c }}</a>
+    }
+  </nav>
+
+  <div class="tipos">
+    <button [class.ativo]="tipo() === 'T'" (click)="tipo.set('T')">Todos</button>
+    <button [class.ativo]="tipo() === 'P'" (click)="tipo.set('P')">Produtos</button>
+    <button [class.ativo]="tipo() === 'S'" (click)="tipo.set('S')">Serviços</button>
+  </div>
+
+  @if (carregando()) {
+    <p class="msg">Carregando...</p>
+  } @else if (erro()) {
+    <p class="msg erro">{{ erro() }}</p>
+  } @else {
+    <div class="grade">
+      @for (i of filtrados(); track i.iditem) {
+        <app-produto-card [item]="i" (adicionar)="adicionar($event)" />
+      } @empty {
+        <div class="msg">
+          <p>Nenhum item encontrado.</p>
+          <button class="btn btn-outline" (click)="limparFiltros()">Limpar filtros</button>
+        </div>
+      }
+    </div>
+  }
+</div>
+
+@if (aviso()) {
+  <div class="toast">{{ aviso() }}</div>
+}

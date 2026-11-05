@@ -1,0 +1,62 @@
+<section class="topo">
+  <h1>Meus Pedidos</h1>
+</section>
+
+<div class="container">
+  @if (!cliente()) {
+    <form class="ident" (ngSubmit)="identificar()">
+      <p>Informe seu CPF para consultar seus pedidos.</p>
+      <input name="cpf" [(ngModel)]="cpf" placeholder="000.000.000-00" maxlength="14">
+      @if (erro()) { <small>{{ erro() }}</small> }
+      <button class="btn" type="submit">Consultar</button>
+      <a routerLink="/cadastro" class="link">Ainda não sou cadastrado</a>
+    </form>
+  } @else {
+    <div class="cabecalho">
+      <p>Olá, <strong>{{ cliente()?.nome }}</strong></p>
+      <button class="btn btn-outline" (click)="sair()">Trocar cliente</button>
+    </div>
+
+    @if (carregando()) {
+      <p class="msg">Carregando...</p>
+    } @else if (erro()) {
+      <p class="msg erro">{{ erro() }}</p>
+    } @else if (pedidos().length === 0) {
+      <div class="msg">
+        <p>Você ainda não fez nenhum pedido.</p>
+        <a routerLink="/catalogo" class="btn">Ver catálogo</a>
+      </div>
+    } @else {
+      <div class="lista">
+        @for (p of pedidos(); track p.idatendimento) {
+          <article class="pedido">
+            <button class="resumo" (click)="alternar(p.idatendimento)">
+              <span class="num">Pedido #{{ p.idatendimento }}</span>
+              <span>{{ p.dataAtendimento | date:'dd/MM/yyyy' }}</span>
+              <strong>{{ p.total | currency:'BRL' }}</strong>
+              <span class="status" [attr.data-status]="p.status">{{ p.status }}</span>
+            </button>
+
+            @if (aberto() === p.idatendimento) {
+              <table class="detalhes">
+                <thead>
+                  <tr><th>Item</th><th>Qtd</th><th>Valor unit.</th><th>Subtotal</th></tr>
+                </thead>
+                <tbody>
+                  @for (i of p.itens; track i.iditem) {
+                    <tr>
+                      <td>{{ i.item }}</td>
+                      <td>{{ i.quantidade }}</td>
+                      <td>{{ i.valorUnitario | currency:'BRL' }}</td>
+                      <td>{{ i.valorUnitario * i.quantidade | currency:'BRL' }}</td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            }
+          </article>
+        }
+      </div>
+    }
+  }
+</div>

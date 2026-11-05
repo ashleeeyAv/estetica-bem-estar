@@ -1,0 +1,26 @@
+<section class="hero">
+  <div class="container">
+    <p class="sobretitulo">Seu momento de renovação</p>
+    <h1>Bem-estar que <em>transforma</em></h1>
+    <p class="subtitulo">
+      Serviços estéticos e produtos selecionados para cuidar de você por dentro e por fora.
+    </p>
+    <div class="acoes">
+      <a routerLink="/catalogo" class="btn">Ver catálogo</a>
+      <a routerLink="/cadastro" class="btn btn-claro">Criar conta</a>
+    </div>
+  </div>
+</section>
+
+<section class="container secao">
+  <h2>O que oferecemos</h2>
+  <div class="grade">
+    @for (d of destaques; track d.titulo) {
+      <article class="card">
+        <span class="icone">{{ d.icone }}</span>
+        <h3>{{ d.titulo }}</h3>
+        <p>{{ d.texto }}</p>
+      </article>
+    }
+  </div>
+</section>

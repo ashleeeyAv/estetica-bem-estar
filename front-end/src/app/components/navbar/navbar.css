@@ -1,0 +1,40 @@
+.navbar {
+  background: var(--vinho);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 12px rgba(0,0,0,.2);
+}
+.barra { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.logo span { color: var(--dourado); }
+.links { display: flex; gap: 26px; align-items: center; }
+.links a {
+  color: var(--rose);
+  text-decoration: none;
+  font-size: .95rem;
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+  transition: color .2s, border-color .2s;
+}
+.links a:hover, .links a.ativo { color: #fff; border-color: var(--dourado); }
+.carrinho { position: relative; }
+.badge {
+  background: var(--dourado);
+  color: var(--vinho-escuro);
+  font-size: .72rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 2px 7px;
+  margin-left: 4px;
+}
+@media (max-width: 640px) {
+  .barra { flex-direction: column; height: auto; padding: 12px 20px; gap: 8px; }
+  .links { gap: 14px; flex-wrap: wrap; justify-content: center; }
+}

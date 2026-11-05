@@ -1,0 +1,72 @@
+<h2>Entrada de produtos</h2>
+
+@if (msg()) { <div class="alerta ok">{{ msg() }}</div> }
+@if (erro()) { <div class="alerta erro">{{ erro() }}</div> }
+
+<form class="form" [formGroup]="form" (ngSubmit)="salvar()" novalidate>
+  <div class="grid">
+    <div class="campo larga">
+      <label for="prod">Produto</label>
+      <select id="prod" formControlName="iditem" [class.invalido]="invalido('iditem')">
+        <option [ngValue]="0">Selecione</option>
+        @for (p of produtos(); track p.iditem) {
+          <option [ngValue]="p.iditem">{{ p.item }} (estoque: {{ p.quantidadeEstoque ?? 0 }})</option>
+        }
+      </select>
+      @if (invalido('iditem')) { <small>Selecione um produto.</small> }
+    </div>
+
+    <div class="campo">
+      <label for="data">Data de entrada</label>
+      <input id="data" type="date" [max]="hoje" formControlName="dataEntrada" [class.invalido]="invalido('dataEntrada')">
+      @if (invalido('dataEntrada')) { <small>Informe uma data válida (não futura).</small> }
+    </div>
+
+    <div class="campo">
+      <label for="qtd">Quantidade recebida</label>
+      <input id="qtd" type="number" min="1" step="1" formControlName="quantidadeEntrada" [class.invalido]="invalido('quantidadeEntrada')">
+      @if (invalido('quantidadeEntrada')) { <small>Informe um número inteiro maior que zero.</small> }
+    </div>
+
+    <div class="campo">
+      <label for="un">Unidade</label>
+      <input id="un" maxlength="10" formControlName="unidade" [class.invalido]="invalido('unidade')">
+      @if (invalido('unidade')) { <small>Informe a unidade.</small> }
+    </div>
+
+    <div class="campo">
+      <label for="val">Valor unitário de entrada (R$)</label>
+      <input id="val" type="number" step="0.01" min="0" formControlName="valorUnitarioEntrada" [class.invalido]="invalido('valorUnitarioEntrada')">
+      @if (invalido('valorUnitarioEntrada')) { <small>Informe um valor maior que zero.</small> }
+    </div>
+  </div>
+
+  <div class="acoes">
+    <button class="btn" type="submit" [disabled]="salvando()">
+      {{ salvando() ? 'Registrando...' : 'Registrar entrada' }}
+    </button>
+  </div>
+</form>
+
+<h3>Entradas registradas</h3>
+<div class="tabela-wrap">
+  <table class="tabela">
+    <thead>
+      <tr><th>Nº</th><th>Data</th><th>Produto</th><th>Qtd</th><th>Unid.</th><th>Valor unit.</th></tr>
+    </thead>
+    <tbody>
+      @for (e of entradas(); track e.identradaProduto) {
+        <tr>
+          <td>{{ e.identradaProduto }}</td>
+          <td>{{ e.dataEntrada | date:'dd/MM/yyyy' }}</td>
+          <td>{{ e.item }}</td>
+          <td>{{ e.quantidadeEntrada }}</td>
+          <td>{{ e.unidade }}</td>
+          <td>{{ e.valorUnitarioEntrada | currency:'BRL' }}</td>
+        </tr>
+      } @empty {
+        <tr><td colspan="6" class="vazio">Nenhuma entrada registrada nesta sessão.</td></tr>
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+  --vinho: #6d1a36;
+  --vinho-escuro: #4a1024;
+  --vinho-claro: #9c3355;
+  --rose: #e8c9d2;
+  --creme: #faf5f2;
+  --dourado: #c9a66b;
+  --texto: #2d2024;
+  --cinza: #7a6a6f;
+  --sombra: 0 8px 24px rgba(109, 26, 54, 0.12);
+  --raio: 14px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--creme);
+  color: var(--texto);
+}
+
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; color: var(--vinho); }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+.btn {
+  background: var(--vinho);
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background .2s, transform .2s;
+}
+.btn:hover { background: var(--vinho-escuro); transform: translateY(-1px); }
+.btn-outline { background: transparent; color: var(--vinho); border: 1.5px solid var(--vinho); }
+.btn-outline:hover { background: var(--vinho); color: #fff; }

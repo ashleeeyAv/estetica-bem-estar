@@ -1,0 +1,21 @@
+<header class="navbar">
+  <div class="container barra">
+    <a routerLink="/" class="logo">Estética <span>&</span> Bem-Estar</a>
+
+    <nav class="links">
+      <a routerLink="/" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }"
+        >Início</a
+      >
+      <a routerLink="/catalogo" routerLinkActive="ativo">Catálogo</a>
+      <a routerLink="/cadastro" routerLinkActive="ativo">Cadastro</a>
+      <a routerLink="/meus-pedidos" routerLinkActive="ativo">Meus pedidos</a>
+      <!-- <a routerLink="/admin" routerLinkActive="ativo">Administração</a> -->
+      <a routerLink="/carrinho" class="carrinho" routerLinkActive="ativo">
+        🛍️ Carrinho
+        @if (carrinho.quantidadeTotal() > 0) {
+          <span class="badge">{{ carrinho.quantidadeTotal() }}</span>
+        }
+      </a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,59 @@
+<section class="topo">
+  <h1>Carrinho</h1>
+</section>
+
+<div class="container">
+  @if (numeroPedido()) {
+    <div class="vazio">
+      <h2>Pedido #{{ numeroPedido() }} registrado! 🎉</h2>
+      <p>Seu pedido está aberto e aguarda tratamento da nossa equipe.</p>
+      <a routerLink="/meus-pedidos" class="btn">Ver meus pedidos</a>
+    </div>
+  } @else if (carrinho.itens().length === 0) {
+    <div class="vazio">
+      <h2>Seu carrinho está vazio</h2>
+      <p>Que tal conhecer nossos produtos e serviços?</p>
+      <a routerLink="/catalogo" class="btn">Ver catálogo</a>
+    </div>
+  } @else {
+    <div class="layout">
+      <div class="lista">
+        @for (c of carrinho.itens(); track c.item.iditem) {
+          <div class="linha">
+            <div class="info">
+              <strong>{{ c.item.item }}</strong>
+              <small>{{ c.item.tipoItem === 'S' ? 'Serviço' : 'Produto' }} · {{ c.item.preco | currency:'BRL' }}</small>
+            </div>
+
+            @if (c.item.tipoItem === 'P') {
+              <input type="number" min="1" [max]="c.item.quantidadeEstoque"
+                     [value]="c.quantidade" (change)="alterarQtd(c.item.iditem, $event)">
+            } @else {
+              <span class="fixo">1</span>
+            }
+
+            <strong class="sub">{{ c.item.preco * c.quantidade | currency:'BRL' }}</strong>
+            <button class="remover" (click)="carrinho.remover(c.item.iditem)" aria-label="Remover">✕</button>
+          </div>
+        }
+      </div>
+
+      <aside class="resumo">
+        <h3>Resumo</h3>
+        <div class="total">
+          <span>Total</span>
+          <strong>{{ carrinho.total() | currency:'BRL' }}</strong>
+        </div>
+
+        @if (erro()) {
+          <p class="aviso-erro">{{ erro() }}</p>
+        }
+
+        <button class="btn" [disabled]="enviando()" (click)="finalizar()">
+          {{ enviando() ? 'Registrando...' : 'Finalizar compra' }}
+        </button>
+        <a routerLink="/catalogo" class="btn btn-outline">Continuar comprando</a>
+      </aside>
+    </div>
+  }
+</div>

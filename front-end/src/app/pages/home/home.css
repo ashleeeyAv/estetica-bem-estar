@@ -1,0 +1,30 @@
+.hero {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(201,166,107,.25), transparent 45%),
+    linear-gradient(135deg, var(--vinho-escuro), var(--vinho) 60%, var(--vinho-claro));
+  color: #fff;
+  padding: 110px 0;
+  text-align: center;
+}
+.sobretitulo { letter-spacing: 3px; text-transform: uppercase; font-size: .8rem; color: var(--dourado); }
+.hero h1 { color: #fff; font-size: clamp(2.4rem, 6vw, 4.2rem); margin: 12px 0; line-height: 1.1; }
+.hero em { color: var(--dourado); font-style: italic; }
+.subtitulo { max-width: 560px; margin: 0 auto 30px; color: var(--rose); font-weight: 300; }
+.acoes { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.btn-claro { background: transparent; border: 1.5px solid var(--rose); color: var(--rose); }
+.btn-claro:hover { background: var(--rose); color: var(--vinho-escuro); }
+
+.secao { padding: 60px 20px 0; text-align: center; }
+.secao h2 { font-size: 2.2rem; margin-bottom: 30px; }
+.grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.card {
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  transition: transform .25s;
+}
+.card:hover { transform: translateY(-6px); }
+.icone { font-size: 2.4rem; }
+.card h3 { margin: 12px 0 8px; font-size: 1.5rem; }
+.card p { color: var(--cinza); font-size: .92rem; }

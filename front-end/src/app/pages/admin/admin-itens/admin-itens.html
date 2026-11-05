@@ -1,0 +1,134 @@
+<div class="cabecalho">
+  <h2>{{ titulo }}</h2>
+  <button class="btn" (click)="novo()">+ Novo {{ nomeSingular }}</button>
+</div>
+
+@if (msg()) { <div class="alerta ok">{{ msg() }}</div> }
+@if (erro()) { <div class="alerta erro">{{ erro() }}</div> }
+
+@if (mostrandoForm()) {
+  <form class="form" [formGroup]="form" (ngSubmit)="salvar()" novalidate>
+    <h3>{{ editando() ? 'Editar' : 'Cadastrar' }} {{ nomeSingular }}</h3>
+
+    <div class="grid">
+      <div class="campo larga">
+        <label for="item">Nome</label>
+        <input id="item" formControlName="item" maxlength="40" [class.invalido]="invalido('item')">
+        @if (invalido('item')) { <small>Informe o nome (até 40 caracteres).</small> }
+      </div>
+
+      <div class="campo">
+        <label for="cat">Categoria</label>
+        <select id="cat" formControlName="idcategoria" [class.invalido]="invalido('idcategoria')">
+          <option [ngValue]="0">Selecione</option>
+          @for (c of categorias(); track c.idcategoria) {
+            <option [ngValue]="c.idcategoria">{{ c.categoria }}</option>
+          }
+        </select>
+        @if (invalido('idcategoria')) { <small>Selecione uma categoria.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="preco">{{ tipo === 'P' ? 'Preço de custo (R$)' : 'Valor (R$)' }}</label>
+        <input id="preco" type="number" step="0.01" min="0" formControlName="preco" [class.invalido]="invalido('preco')">
+        @if (invalido('preco')) { <small>Informe um valor maior que zero.</small> }
+      </div>
+
+      @if (tipo === 'P') {
+        <div class="campo">
+          <label for="cod">Código de preço</label>
+          <input id="cod" type="number" min="0" formControlName="codigoPreco" [class.invalido]="invalido('codigoPreco')">
+          @if (invalido('codigoPreco')) { <small>Informe o código de preço.</small> }
+        </div>
+
+        <div class="campo">
+          <label for="un">Unidade</label>
+          <input id="un" formControlName="unidade" maxlength="10" placeholder="UN, ML, G..." [class.invalido]="invalido('unidade')">
+          @if (invalido('unidade')) { <small>Informe a unidade.</small> }
+        </div>
+      }
+
+      <div class="campo larga">
+        <label for="desc">Descrição</label>
+        <input id="desc" formControlName="descricaoItem" maxlength="200" [class.invalido]="invalido('descricaoItem')">
+        @if (invalido('descricaoItem')) { <small>Informe a descrição (até 200 caracteres).</small> }
+      </div>
+    </div>
+
+    @if (tipo === 'P') {
+      <p class="dica">O preço de venda é calculado pelo banco a partir do custo e do código de preço.</p>
+    }
+
+    <div class="acoes">
+      <button class="btn" type="submit">Salvar</button>
+      <button class="btn btn-outline" type="button" (click)="cancelar()">Cancelar</button>
+    </div>
+  </form>
+}
+
+<div class="busca">
+  <input type="number" min="1" placeholder="Buscar por ID" [formControl]="buscaId" (keyup.enter)="buscarPorId()">
+  <button class="btn btn-outline" (click)="buscarPorId()">Buscar</button>
+  @if (resultado()) {
+    <button class="btn btn-outline" (click)="limparBusca()">Ver todos</button>
+  }
+</div>
+
+@if (carregando()) {
+  <p class="msg">Carregando...</p>
+} @else {
+  <div class="tabela-wrap">
+    <table class="tabela">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Categoria</th>
+          @if (tipo === 'P') {
+            <th>Custo</th>
+            <th>Venda</th>
+            <th>Unid.</th>
+            <th>Estoque</th>
+          } @else {
+            <th>Valor</th>
+          }
+          <th>Situação</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (i of exibidos(); track i.iditem) {
+          <tr [class.inativo]="i.ativoProdutoServico !== 'S'">
+            <td>{{ i.iditem }}</td>
+            <td>
+              <strong>{{ i.item }}</strong>
+              <small>{{ i.descricaoItem }}</small>
+            </td>
+            <td>{{ i.categoria }}</td>
+            @if (tipo === 'P') {
+              <td>{{ (i.precoCusto ?? i.preco) | currency:'BRL' }}</td>
+              <td>{{ (i.precoVenda ?? i.preco) | currency:'BRL' }}</td>
+              <td>{{ i.unidade }}</td>
+              <td>{{ i.quantidadeEstoque ?? 0 }}</td>
+            } @else {
+              <td>{{ i.preco | currency:'BRL' }}</td>
+            }
+            <td>
+              <span class="status" [class.off]="i.ativoProdutoServico !== 'S'">
+                {{ i.ativoProdutoServico === 'S' ? 'Ativo' : 'Inativo' }}
+              </span>
+            </td>
+            <td class="acoes-linha">
+              <button class="link" (click)="editar(i)">Editar</button>
+              <button class="link" (click)="alternarSituacao(i)">
+                {{ i.ativoProdutoServico === 'S' ? 'Desativar' : 'Reativar' }}
+              </button>
+            </td>
+          </tr>
+        } @empty {
+          <tr><td [attr.colspan]="tipo === 'P' ? 9 : 6" class="vazio">Nenhum registro encontrado.</td></tr>
+        }
+      </tbody>
+    </table>
+  </div>
+}

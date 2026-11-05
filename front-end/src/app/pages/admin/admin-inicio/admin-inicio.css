@@ -1,0 +1,18 @@
+h2 { font-size: 2rem; margin-bottom: 20px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; }
+.card {
+  background: #fff;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 24px;
+  text-decoration: none;
+  color: var(--cinza);
+  display: flex; flex-direction: column; gap: 6px;
+  transition: transform .2s;
+}
+.card:hover { transform: translateY(-4px); }
+.num { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 700; color: var(--vinho); line-height: 1; }
+.destaque { border-left: 4px solid var(--dourado); }
+.alerta .num { color: #b3261e; }
+.erro { color: #b3261e; }
+.carregando { color: var(--cinza); }

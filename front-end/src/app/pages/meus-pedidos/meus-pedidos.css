@@ -1,0 +1,43 @@
+.topo { background: var(--rose); padding: 36px 0; text-align: center; margin-bottom: 36px; }
+.topo h1 { font-size: 2.4rem; }
+
+.ident {
+  max-width: 420px; margin: 0 auto;
+  background: #fff; border-radius: var(--raio); box-shadow: var(--sombra);
+  padding: 28px; display: flex; flex-direction: column; gap: 14px; text-align: center;
+}
+.ident input {
+  padding: 11px 14px; border: 1.5px solid var(--rose); border-radius: 8px;
+  font-family: inherit; background: var(--creme); outline: none; text-align: center;
+}
+.ident input:focus { border-color: var(--vinho-claro); }
+.ident small { color: #b3261e; }
+.link { color: var(--vinho); font-size: .85rem; }
+
+.cabecalho { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px; }
+.msg { text-align: center; color: var(--cinza); padding: 40px 0; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.msg.erro { color: #b3261e; }
+.msg .btn { text-decoration: none; }
+
+.lista { display: flex; flex-direction: column; gap: 14px; }
+.pedido { background: #fff; border-radius: var(--raio); box-shadow: var(--sombra); overflow: hidden; }
+.resumo {
+  width: 100%; display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 12px;
+  align-items: center; padding: 16px 20px; background: none; border: none;
+  cursor: pointer; font-family: inherit; font-size: .92rem; text-align: left; color: var(--texto);
+}
+.resumo:hover { background: var(--creme); }
+.num { font-weight: 600; color: var(--vinho); }
+
+.status { padding: 4px 12px; border-radius: 999px; font-size: .75rem; background: var(--rose); color: var(--vinho-escuro); }
+.status[data-status='Em processamento'] { background: #f6ecd6; color: #7a5a1c; }
+.status[data-status='Concluído'] { background: #e4f3e8; color: #24613a; }
+.status[data-status='Cancelado'] { background: #fbe4e2; color: #b3261e; }
+
+.detalhes { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.detalhes th { text-align: left; background: var(--creme); padding: 10px 20px; color: var(--cinza); font-weight: 500; }
+.detalhes td { padding: 10px 20px; border-top: 1px solid var(--rose); }
+
+@media (max-width: 640px) {
+  .resumo { grid-template-columns: 1fr 1fr; }
+}

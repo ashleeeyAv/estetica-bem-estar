@@ -1,0 +1,30 @@
+<h2>Resumo do sistema</h2>
+
+@if (erro()) {
+  <p class="erro">{{ erro() }}</p>
+} @else if (!resumo()) {
+  <p class="carregando">Carregando...</p>
+} @else {
+  <div class="cards">
+    <a class="card" routerLink="/admin/clientes">
+      <span class="num">{{ resumo()?.clientes }}</span>
+      <span>Clientes cadastrados</span>
+    </a>
+    <a class="card" routerLink="/admin/produtos">
+      <span class="num">{{ resumo()?.produtos }}</span>
+      <span>Produtos ativos</span>
+    </a>
+    <a class="card" routerLink="/admin/servicos">
+      <span class="num">{{ resumo()?.servicos }}</span>
+      <span>Serviços ativos</span>
+    </a>
+    <a class="card destaque" routerLink="/admin/pedidos">
+      <span class="num">{{ resumo()?.pedidosAbertos }}</span>
+      <span>Pedidos em aberto</span>
+    </a>
+    <a class="card alerta" routerLink="/admin/estoque">
+      <span class="num">{{ resumo()?.semEstoque }}</span>
+      <span>Produtos sem estoque</span>
+    </a>
+  </div>
+}

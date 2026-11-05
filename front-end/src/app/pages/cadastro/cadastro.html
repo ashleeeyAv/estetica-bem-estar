@@ -1,0 +1,106 @@
+<section class="topo">
+  <h1>Cadastro de Cliente</h1>
+</section>
+
+<div class="container">
+  <form class="form" [formGroup]="form" (ngSubmit)="salvar()" novalidate>
+
+    @if (sucesso()) { <div class="alerta ok">{{ sucesso() }}</div> }
+    @if (erro()) { <div class="alerta erro">{{ erro() }}</div> }
+
+    <h3>Dados pessoais</h3>
+    <div class="grid">
+      <div class="campo larga">
+        <label for="nome">Nome completo</label>
+        <input id="nome" formControlName="nome" [class.invalido]="invalido('nome')">
+        @if (invalido('nome')) { <small>Informe o nome (mínimo 3 letras).</small> }
+      </div>
+
+      <div class="campo">
+        <label for="cpf">CPF</label>
+        <input id="cpf" formControlName="cpf" maxlength="14" placeholder="000.000.000-00" [class.invalido]="invalido('cpf')">
+        @if (invalido('cpf')) { <small>CPF inválido.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="nasc">Data de nascimento</label>
+        <input id="nasc" type="date" formControlName="dataNascimento" [class.invalido]="invalido('dataNascimento')">
+        @if (invalido('dataNascimento')) { <small>Informe uma data válida.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="sexo">Sexo</label>
+        <select id="sexo" formControlName="sexo" [class.invalido]="invalido('sexo')">
+          <option value="">Selecione</option>
+          <option value="F">Feminino</option>
+          <option value="M">Masculino</option>
+        </select>
+        @if (invalido('sexo')) { <small>Selecione uma opção.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" formControlName="email" [class.invalido]="invalido('email')">
+        @if (invalido('email')) { <small>Informe um e-mail válido.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="tel">Telefone (DDD + número)</label>
+        <input id="tel" formControlName="telefone" maxlength="11" placeholder="79999990000" [class.invalido]="invalido('telefone')">
+        @if (invalido('telefone')) { <small>Use 10 ou 11 números, sem espaços.</small> }
+      </div>
+    </div>
+
+    <h3>Endereço</h3>
+    <div class="grid">
+      <div class="campo">
+        <label for="cep">CEP</label>
+        <input id="cep" formControlName="cep" maxlength="8" placeholder="49000000" [class.invalido]="invalido('cep')">
+        @if (invalido('cep')) { <small>CEP com 8 números.</small> }
+      </div>
+
+      <div class="campo larga">
+        <label for="log">Logradouro</label>
+        <input id="log" formControlName="logradouro" [class.invalido]="invalido('logradouro')">
+        @if (invalido('logradouro')) { <small>Campo obrigatório.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="num">Número</label>
+        <input id="num" formControlName="numero" maxlength="10" [class.invalido]="invalido('numero')">
+        @if (invalido('numero')) { <small>Campo obrigatório.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="comp">Complemento</label>
+        <input id="comp" formControlName="complemento">
+      </div>
+
+      <div class="campo">
+        <label for="bairro">Bairro</label>
+        <input id="bairro" formControlName="bairro" [class.invalido]="invalido('bairro')">
+        @if (invalido('bairro')) { <small>Campo obrigatório.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="cidade">Cidade</label>
+        <input id="cidade" formControlName="cidade" [class.invalido]="invalido('cidade')">
+        @if (invalido('cidade')) { <small>Campo obrigatório.</small> }
+      </div>
+
+      <div class="campo">
+        <label for="uf">UF</label>
+        <input id="uf" formControlName="uf" maxlength="2" placeholder="SE" [class.invalido]="invalido('uf')">
+        @if (invalido('uf')) { <small>Informe a sigla (ex.: SE).</small> }
+      </div>
+    </div>
+
+    <div class="acoes">
+      <button class="btn" type="submit" [disabled]="enviando()">
+        {{ enviando() ? 'Salvando...' : 'Salvar' }}
+      </button>
+      <button class="btn btn-outline" type="button" (click)="limpar()">Limpar</button>
+      <a routerLink="/catalogo" class="btn btn-outline">Voltar ao catálogo</a>
+    </div>
+  </form>
+</div>

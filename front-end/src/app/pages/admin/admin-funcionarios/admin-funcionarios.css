@@ -1,0 +1,41 @@
+.cabecalho { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; flex-wrap: wrap; gap: 10px; }
+h2 { font-size: 2rem; }
+
+.alerta { padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; font-size: .9rem; }
+.ok { background: #e4f3e8; color: #24613a; }
+.erro { background: #fbe4e2; color: #b3261e; }
+
+.form { background: #fff; border-radius: var(--raio); box-shadow: var(--sombra); padding: 24px; margin-bottom: 22px; }
+.form h3 { margin-bottom: 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px 18px; }
+.larga { grid-column: span 2; }
+.campo { display: flex; flex-direction: column; gap: 5px; }
+label { font-size: .82rem; color: var(--cinza); }
+input, select {
+  padding: 10px 12px; border: 1.5px solid var(--rose); border-radius: 8px;
+  font-family: inherit; font-size: .92rem; background: var(--creme); outline: none;
+}
+input:focus, select:focus { border-color: var(--vinho-claro); box-shadow: 0 0 0 3px rgba(156,51,85,.15); }
+.invalido { border-color: #b3261e; }
+small { color: #b3261e; font-size: .75rem; }
+.acoes { display: flex; gap: 12px; margin-top: 16px; }
+
+.busca { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+.busca input { width: 180px; }
+
+.tabela-wrap { overflow-x: auto; background: #fff; border-radius: var(--raio); box-shadow: var(--sombra); }
+.tabela { width: 100%; border-collapse: collapse; font-size: .86rem; }
+.tabela th { text-align: left; background: var(--creme); color: var(--cinza); font-weight: 500; padding: 12px; white-space: nowrap; }
+.tabela td { padding: 12px; border-top: 1px solid var(--rose); vertical-align: top; }
+.tabela td small { display: block; color: var(--cinza); }
+.tabela tr.inativo { opacity: .55; }
+.vazio, .msg { text-align: center; color: var(--cinza); padding: 28px; }
+
+.status { background: #e4f3e8; color: #24613a; padding: 3px 10px; border-radius: 999px; font-size: .74rem; }
+.status.off { background: #fbe4e2; color: #b3261e; }
+
+.acoes-linha { white-space: nowrap; }
+.link { background: none; border: none; color: var(--vinho); cursor: pointer; font-family: inherit; font-size: .85rem; margin-right: 10px; }
+.link:hover { text-decoration: underline; }
+
+@media (max-width: 600px) { .larga { grid-column: span 1; } }
