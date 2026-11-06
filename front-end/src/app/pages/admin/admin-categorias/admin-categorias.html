@@ -7,10 +7,10 @@
 @if (erro()) { <div class="alerta erro">{{ erro() }}</div> }
 
 @if (mostrandoForm()) {
-  <form class="form" (ngSubmit)="salvar()">
+  <form class="form" [formGroup]="form" (ngSubmit)="salvar()" novalidate>
     <label for="nome">{{ editando() ? 'Editar categoria' : 'Nova categoria' }}</label>
     <div class="linha">
-      <input id="nome" [formControl]="nome" maxlength="35" placeholder="Nome da categoria"
+      <input id="nome" formControlName="nome" maxlength="35" placeholder="Nome da categoria"
              [class.invalido]="nome.invalid && nome.touched">
       <button class="btn" type="submit">Salvar</button>
       <button class="btn btn-outline" type="button" (click)="cancelar()">Cancelar</button>

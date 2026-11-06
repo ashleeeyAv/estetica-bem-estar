@@ -1,5 +1,5 @@
 import { Component, OnInit, computed, inject, signal } from '@angular/core';
-import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Categoria } from '../../../models/categoria';
 import { CategoriaService } from '../../../services/categoria.service';
 
@@ -11,6 +11,7 @@ import { CategoriaService } from '../../../services/categoria.service';
 })
 export class AdminCategorias implements OnInit {
   private service = inject(CategoriaService);
+  private fb = inject(FormBuilder);
 
   categorias = signal<Categoria[]>([]);
   resultado = signal<Categoria | null>(null);
@@ -20,11 +21,12 @@ export class AdminCategorias implements OnInit {
   msg = signal('');
   erro = signal('');
 
-  nome = new FormControl('', {
-    nonNullable: true,
-    validators: [Validators.required, Validators.maxLength(35)]
+  form = this.fb.group({
+    nome: ['', [Validators.required, Validators.maxLength(35)]]
   });
   buscaId = new FormControl('');
+
+  get nome() { return this.form.controls.nome; }
 
   exibidas = computed(() => {
     const r = this.resultado();
@@ -44,14 +46,14 @@ export class AdminCategorias implements OnInit {
   novo() {
     this.msg.set(''); this.erro.set('');
     this.editando.set(null);
-    this.nome.reset('');
+    this.form.reset({ nome: '' });
     this.mostrandoForm.set(true);
   }
 
   editar(c: Categoria) {
     this.msg.set(''); this.erro.set('');
     this.editando.set(c);
-    this.nome.setValue(c.categoria);
+    this.form.controls.nome.setValue(c.categoria);
     this.mostrandoForm.set(true);
   }
 
@@ -62,9 +64,10 @@ export class AdminCategorias implements OnInit {
 
   salvar() {
     this.msg.set(''); this.erro.set('');
-    const texto = this.nome.value.trim();
-    if (this.nome.invalid || !texto) {
-      this.nome.markAsTouched();
+    const control = this.form.controls.nome;
+    const texto = (control.value ?? '').trim();
+    if (control.invalid || !texto) {
+      control.markAsTouched();
       this.erro.set('Informe o nome da categoria (até 35 caracteres).');
       return;
     }
