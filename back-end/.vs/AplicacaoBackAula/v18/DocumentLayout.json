@@ -1,0 +1,393 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\controllers\\entradaprodutocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\controllers\\entradaprodutocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\dto\\entradaprodutodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\dto\\entradaprodutodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\dto\\estoquedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\dto\\estoquedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\models\\bdaulabackendcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\models\\bdaulabackendcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\dto\\funcionariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\dto\\funcionariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\controllers\\produtoitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\controllers\\produtoitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\controllers\\atendimentocontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\controllers\\atendimentocontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\dto\\atendimentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\dto\\atendimentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\models\\atendimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\models\\atendimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\dto\\atendimentoaddputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\dto\\atendimentoaddputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\dto\\atendimentoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\dto\\atendimentoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\dto\\atendimentoitemaddputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\dto\\atendimentoitemaddputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\models\\atendimentoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\models\\atendimentoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\dto\\pessoadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\dto\\pessoadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|c:\\users\\pires\\downloads\\atividade 04 - codifica\u00E7\u00E3o backend\\atividade 04 - codifica\u00E7\u00E3o backend\\projeto e banco\\aplicacaobackaula\\aplicacaobackaula\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1FF03C-9D8F-46FC-8E51-DE681CA24AC4}|AplicacaoBackAula\\AplicacaoBackAula.csproj|solutionrelative:aplicacaobackaula\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EntradaProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Controllers\\EntradaProdutoController.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Controllers\\EntradaProdutoController.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Controllers\\EntradaProdutoController.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Controllers\\EntradaProdutoController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAQwF4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T18:46:46.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Program.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Program.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Program.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAGoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T22:19:43.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EstoqueController.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Controllers\\EstoqueController.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Controllers\\EstoqueController.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Controllers\\EstoqueController.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Controllers\\EstoqueController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T18:46:13.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EntradaProdutoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\EntradaProdutoDTO.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\DTO\\EntradaProdutoDTO.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\EntradaProdutoDTO.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\DTO\\EntradaProdutoDTO.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T18:45:48.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EstoqueDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\EstoqueDTO.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\DTO\\EstoqueDTO.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\EstoqueDTO.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\DTO\\EstoqueDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T18:45:17.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FuncionarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Controllers\\FuncionarioController.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Controllers\\FuncionarioController.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Controllers\\FuncionarioController.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Controllers\\FuncionarioController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwEMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T18:21:26.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProdutoItemController.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Controllers\\ProdutoItemController.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Controllers\\ProdutoItemController.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Controllers\\ProdutoItemController.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Controllers\\ProdutoItemController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAOsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T22:49:05.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BdAulaBackendContext.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\BdAulaBackendContext.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Models\\BdAulaBackendContext.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\BdAulaBackendContext.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Models\\BdAulaBackendContext.cs",
+              "ViewState": "AgIAABcBAAAAAAAAAAAmwDUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T00:08:43.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProdutoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\ProdutoDTO.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\DTO\\ProdutoDTO.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\ProdutoDTO.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\DTO\\ProdutoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T22:46:45.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FuncionarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\FuncionarioDTO.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\DTO\\FuncionarioDTO.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\FuncionarioDTO.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\DTO\\FuncionarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T18:20:41.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\appsettings.json",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\appsettings.json",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\appsettings.json",
+              "RelativeToolTip": "AplicacaoBackAula\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-03T22:17:37.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AtendimentoContoller.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Controllers\\AtendimentoContoller.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Controllers\\AtendimentoContoller.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Controllers\\AtendimentoContoller.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Controllers\\AtendimentoContoller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T00:08:43.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\Produto.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Models\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T22:46:52.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\appsettings.Development.json",
+              "RelativeToolTip": "AplicacaoBackAula\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-03T22:21:50.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AtendimentoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\AtendimentoDTO.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\DTO\\AtendimentoDTO.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\AtendimentoDTO.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\DTO\\AtendimentoDTO.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T00:08:43.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AtendimentoAddPutDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\AtendimentoAddPutDTO.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\DTO\\AtendimentoAddPutDTO.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\AtendimentoAddPutDTO.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\DTO\\AtendimentoAddPutDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T00:08:43.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AtendimentoItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\AtendimentoItemDTO.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\DTO\\AtendimentoItemDTO.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\AtendimentoItemDTO.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\DTO\\AtendimentoItemDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T00:08:43.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Atendimento.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\Atendimento.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Models\\Atendimento.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\Atendimento.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Models\\Atendimento.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T00:08:43.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Atendimentoitem.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\Atendimentoitem.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Models\\Atendimentoitem.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\Atendimentoitem.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Models\\Atendimentoitem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T00:08:43.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AtendimentoItemAddPutDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\AtendimentoItemAddPutDTO.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\DTO\\AtendimentoItemAddPutDTO.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\AtendimentoItemAddPutDTO.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\DTO\\AtendimentoItemAddPutDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T00:08:43.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\Funcionario.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Models\\Funcionario.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\Funcionario.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Models\\Funcionario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T00:08:43.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Pessoa.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\Pessoa.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\Models\\Pessoa.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\Models\\Pessoa.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\Models\\Pessoa.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T00:08:43.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PessoaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\PessoaDTO.cs",
+              "RelativeDocumentMoniker": "AplicacaoBackAula\\DTO\\PessoaDTO.cs",
+              "ToolTip": "C:\\Users\\Pires\\Downloads\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\ATIVIDADE 04 - CODIFICA\u00C7\u00C3O BACKEND\\PROJETO E BANCO\\AplicacaoBackAula\\AplicacaoBackAula\\DTO\\PessoaDTO.cs",
+              "RelativeToolTip": "AplicacaoBackAula\\DTO\\PessoaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T00:08:43.678Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
